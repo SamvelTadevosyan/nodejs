@@ -1,12 +1,11 @@
-{
+{    "devserver": "./node_modules/nodemon/bin/nodemon.js app.js 7000",
+    "build": "babel app.js",
   "name": "nodejs",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "devserver": "./node_modules/nodemon/bin/nodemon.js app.js 7000",
-    "build": "babel app.js",
-    "start": "npm run build && npm run devserver",
+    "start": "nodemon app.js --exec babel-node",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -20,8 +19,8 @@
   },
   "homepage": "https://github.com/SamvelTadevosyan/nodejs#readme",
   "devDependencies": {
-    "@babel/cli": "^7.1.5",
     "@babel/core": "^7.1.6",
+    "@babel/node": "^7.0.0",
     "@babel/preset-env": "^7.1.6",
     "@babel/preset-stage-2": "^7.0.0",
     "@babel/register": "^7.0.0",

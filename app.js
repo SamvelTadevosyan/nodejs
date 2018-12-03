@@ -1,9 +1,9 @@
-const {
+import {
   User,
   Product,
-} = require('./modules');
+} from './modules';
 
-const config = require('./config/app.json');
+import config from './config/app.json'
 
 console.log(config.name);
 new User();
