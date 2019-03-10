@@ -1,5 +1,6 @@
-{    "devserver": "./node_modules/nodemon/bin/nodemon.js app.js 7000",
-    "build": "babel app.js",
+{
+  "devserver": "./node_modules/nodemon/bin/nodemon.js app.js 7000",
+  "build": "babel app.js",
   "name": "nodejs",
   "version": "1.0.0",
   "description": "",
@@ -25,5 +26,12 @@
     "@babel/preset-stage-2": "^7.0.0",
     "@babel/register": "^7.0.0",
     "nodemon": "^1.18.7"
+  },
+  "dependencies": {
+    "commander": "^2.19.0",
+    "csvtojson": "^2.0.8",
+    "lodash.clonedeep": "^4.5.0",
+    "lodash.isempty": "^4.4.0",
+    "lodash.isequal": "^4.5.0"
   }
 }
